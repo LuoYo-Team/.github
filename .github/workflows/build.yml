@@ -19,15 +19,15 @@ jobs:
     steps:
         - name: "download file"
           run: |
-            mkdir C:\Actions
-            Set-Location C:\Actions
-            curl ${{ inputs.input1 }} -o windows.zip
-            curl ${{ inputs.input2 }} -o linux.zip
-            curl ${{ inputs.input3 }} -o osx.zip
-            Compress-Archive -Path windows.zip,linux.zip,osx.zip -DestinationPath C:\Actions\result.zip
+            mkdir C:\Result
+            Set-Location C:\Result
+            curl.exe ${{ inputs.input1 }} -o windows.zip
+            curl.exe ${{ inputs.input2 }} -o linux.zip
+            curl.exe ${{ inputs.input3 }} -o osx.zip
+            Compress-Archive -Path .\windows.zip,.\linux.zip,.\osx.zip -DestinationPath C:\Result\result.zip
 
         - name: Upload build artifact
           uses: actions/upload-artifact@v3
           with:
             name: update-artifact
-            path: C:\Actions\result.zip
+            path: C:\Result\result.zip
