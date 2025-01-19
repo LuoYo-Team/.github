@@ -1,4 +1,4 @@
-name:"Update Nexus"
+name: "Update Nexus"
 
 on:
   workflow_dispatch:
