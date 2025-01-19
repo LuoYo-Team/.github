@@ -2,16 +2,16 @@ name:"Update Nexus"
 
 on:
   workflow_dispatch:
-  inputs:
-  input1:
-    description: 'Input 1 description'
-    required: true
-  input2:
-    description: 'Input 2 description'
-    required: true
-  input3:
-    description: 'Input 3 description'
-    required: true
+    inputs:
+      input1:
+        description: 'Input 1 description'
+        required: true
+      input2:
+        description: 'Input 2 description'
+        required: true
+      input3:
+        description: 'Input 3 description'
+        required: true
 
 jobs:
   build:
