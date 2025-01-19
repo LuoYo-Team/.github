@@ -1,0 +1,33 @@
+name:"Update Nexus"
+
+on:
+  workflow_dispatch:
+  inputs:
+  input1:
+    description: 'Input 1 description'
+    required: true
+  input2:
+    description: 'Input 2 description'
+    required: true
+  input3:
+    description: 'Input 3 description'
+    required: true
+
+jobs:
+  build:
+    runs-on: "windows-2022"
+
+    - name: "download file"
+      run: |
+        mkdir C:\Actions
+        Set-Location C:\Actions
+        curl ${{ input.input1 }} -o windows.zip
+        curl ${{ input.input2 }} -o linux.zip
+        curl ${{ input.input3 }} -o osx.zip
+        powershell Compress-Archive -Path windows.zip,linux.zip,osx.zip -DestinationPath C:\Actions\result.zip
+
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: update-artifact
+        path: C:\Actions\result.zip
