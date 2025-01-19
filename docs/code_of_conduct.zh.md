@@ -41,7 +41,7 @@
 
 ## 提交报告
 
-虽然我们鼓励社区自行处理问题，但当问题无法被自行处理时，请[在此提交报告](https://github.com/orgs/LuoYo-Team/discussions/new?category=report)。
+虽然我们鼓励社区自行处理问题，但当问题无法被自行处理时，请[在此提交报告](https://github.com/orgs/LuoYo-Team/discussions/new?category=report) 或发送邮件至 luoyo-team@qq.com。
 
 经批准的社区维护者/成员有权利对和责任对提交的报告进行审查，经审核确认有效的报告应当及时处理
 
