@@ -2,7 +2,7 @@
 
 ## 我们是谁？
 
-这里是 LuoYo-Team，是 wuliaodexiaoluo 组织的开发团队。
+这里是 LuoYun-Team，是 wuliaodexiaoluo 组织的开发团队。
 
 >[!TIP]
 >组内成员均是高中生，所以一般活跃在周末和假期。
