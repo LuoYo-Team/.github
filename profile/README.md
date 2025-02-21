@@ -16,7 +16,7 @@
 >[!WARNING]
 >用于挂载 Discussions 仓库的 Issues 页面保留供将来使用，在这发的 Issue 都将被删除
 
-## 以下组织正在与我们协作（协作组织账号）
+## 以下组织正在与我们协作
 
 [Muqingxue-Studio](https://github.com/Muqingxue-Studio)
 
